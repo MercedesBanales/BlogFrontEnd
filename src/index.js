@@ -3,6 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCII5Ac16bB9myFJ4lPGQSX9UgLxSQWCgQ",
+  authDomain: "my-react-blog-64285.firebaseapp.com",
+  projectId: "my-react-blog-64285",
+  storageBucket: "my-react-blog-64285.appspot.com",
+  messagingSenderId: "49439036740",
+  appId: "1:49439036740:web:e8e929e819a943ad323311"
+};
+
+const app = initializeApp(firebaseConfig);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
